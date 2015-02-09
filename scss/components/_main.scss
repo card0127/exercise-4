@@ -12,119 +12,74 @@ html {
 	text-size-adjust: 100%;
 }
 
-
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-
-
 body{
-  font-family: sans-serif;
-  @include zero;
-  // Hides close button if there is no js
-  &.noscript{
-    .close-btn{
-      display: none;
-    }
-  }
+  background-color:#111;
 }
 
-header {
-  padding: 0 1em;
-  position: relative;
-  .toggle-btn{
-    position: absolute;
-    right: 1em;
-    top: 0;
-  }
+.mrloader .inner-loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        -webkit-perspective: 100px;
+        perspective: 100px;
+    }
+
+    .mrloader .inner-text {
+        top: 50%;
+    }
+
+    .mrloader .side {
+        background: url("https://dl.dropboxusercontent.com/u/88633080/icon-android.png");
+        height: 100px;
+        width: 100px;
+        background-size: cover;
+        -webkit-animation: rotate-side 3s infinite ease-in-out;
+        animation: rotate-side 3s infinite ease-in-out;
+    }
+
+@-webkit-keyframes rotate-side {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    40% {
+        -webkit-transform: rotateX(735deg) rotateY(0deg);
+    }
+
+    47%,50% {
+        -webkit-transform: rotateX(720deg) rotateY(0deg);
+    }
+
+    90% {
+        -webkit-transform: rotateX(720deg) rotateY(735deg);
+    }
+
+    97%,100% {
+        -webkit-transform: rotateX(720deg) rotateY(720deg);
+    }
 }
 
-.navigation ul{
-  @include zero;
-  li{
-    list-style-type: none;
-    a{
-      display: block;
-      padding: .5em 1em;
-      text-align: center;
-      border-bottom: 1px solid $light-grey;
-      text-decoration: none;
-    }
-    &:first-child a{
-      border-top: 1px solid $light-grey;
-    }
-  } // li
-} // .navigation ul
-
-.toggle-btn, 
-.close-btn{
-  color: $text-color;
-  height: 40px;
-  width: 40px; 
-  i{
-    border: 1px solid $light-grey;
-    padding: .5em; 
-  }
-  span{
-    @include hide-text;
-  }
-}
-
-.close-btn{
-  margin: 1em;
-}
-/**
- * Sliding Navigation
- */
-
-// Page should move when nav opens
-// only time we will ever use max-width
-@media only screen and (max-width: 60em){ 
-  .site-wrapper{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    z-index: 100;
-    .sliding-canvas{
-      width: 100%;
-      height: 100%;
-      position: relative;
-      transform: translateX(0);
-      @include ease(all, 300ms, ease-in-out);
+@keyframes rotate-side {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
     }
 
-    &[data-state='slide-open'] .sliding-canvas{
-      transform: translateX(-100%);
+    40% {
+        transform: rotateX(735deg) rotateY(0deg);
     }
 
-    &[data-state='slide-open']{
-      // Allow expansion of navigation past page height, when open
-      overflow:visible;
+    47%,50% {
+        transform: rotateX(720deg) rotateY(0deg);
     }
-  }
 
-  // Nav styles
-  .slide-menu{
-    //creates sliding effect
-    position: absolute;
-    width: 100%;
-    right: -100%;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    padding: 0;
-    min-height: 800px;
-  }
-}
+    90% {
+        transform: rotateX(720deg) rotateY(735deg);
+    }
 
-// Resets page when desktop, even if nav is toggled open
-@media only screen and (min-width: 60em) {
-  .toggle-btn, 
-  .close-btn{
-    display: none;
-  }
-  .slide-menu{
-     position: static;
-     right: auto;
-  }
+    97%,100% {
+        transform: rotateX(720deg) rotateY(720deg);
+    }
 }
