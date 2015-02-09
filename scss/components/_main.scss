@@ -14,12 +14,16 @@ html {
 
 body{
   background: linear-gradient(
-    135deg,
-    rgba($left-color, .9),
-    rgba($right-color, .9)
-  );
+      to right,
+      $green-dark,
+      $green-light
+    );    
 }
   
+img {
+	width: 100%;
+}
+
 .mrloader .inner-loader {
         position: absolute;
         left: 50%;
@@ -36,7 +40,7 @@ body{
     }
 
     .mrloader .side {
-        background: url("https://dl.dropboxusercontent.com/u/88633080/icon-android.png");
+        background: url("../images/logo.svg");
         height: 100px;
         width: 100px;
         background-size: cover;
