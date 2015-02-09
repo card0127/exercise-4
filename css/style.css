@@ -79,9 +79,9 @@ html {
 
 /* line 15, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
 body {
-  background-color: #111; }
+  background: linear-gradient(135deg, rgba(36, 46, 77, 0.9), rgba(137, 126, 121, 0.9)); }
 
-/* line 19, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+/* line 23, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
 .mrloader .inner-loader {
   position: absolute;
   left: 50%;
@@ -93,11 +93,11 @@ body {
   -webkit-perspective: 100px;
   perspective: 100px; }
 
-/* line 30, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+/* line 34, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
 .mrloader .inner-text {
   top: 50%; }
 
-/* line 34, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+/* line 38, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
 .mrloader .side {
   background: url("https://dl.dropboxusercontent.com/u/88633080/icon-android.png");
   height: 100px;
@@ -107,48 +107,48 @@ body {
   animation: rotate-side 3s infinite ease-in-out; }
 
 @-webkit-keyframes rotate-side {
-  /* line 44, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 48, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   0% {
     -webkit-transform: rotateX(0deg) rotateY(0deg); }
 
-  /* line 48, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 52, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   40% {
     -webkit-transform: rotateX(735deg) rotateY(0deg); }
 
-  /* line 52, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 56, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   47%, 50% {
     -webkit-transform: rotateX(720deg) rotateY(0deg); }
 
-  /* line 56, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 60, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   90% {
     -webkit-transform: rotateX(720deg) rotateY(735deg); }
 
-  /* line 60, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 64, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   97%, 100% {
     -webkit-transform: rotateX(720deg) rotateY(720deg); } }
 
 @keyframes rotate-side {
-  /* line 66, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 70, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   0% {
     -webkit-transform: rotateX(0deg) rotateY(0deg);
             transform: rotateX(0deg) rotateY(0deg); }
 
-  /* line 70, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 74, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   40% {
     -webkit-transform: rotateX(735deg) rotateY(0deg);
             transform: rotateX(735deg) rotateY(0deg); }
 
-  /* line 74, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 78, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   47%, 50% {
     -webkit-transform: rotateX(720deg) rotateY(0deg);
             transform: rotateX(720deg) rotateY(0deg); }
 
-  /* line 78, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 82, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   90% {
     -webkit-transform: rotateX(720deg) rotateY(735deg);
             transform: rotateX(720deg) rotateY(735deg); }
 
-  /* line 82, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
+  /* line 86, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-4/scss/components/main */
   97%, 100% {
     -webkit-transform: rotateX(720deg) rotateY(720deg);
             transform: rotateX(720deg) rotateY(720deg); } }

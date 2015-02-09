@@ -13,9 +13,13 @@ html {
 }
 
 body{
-  background-color:#111;
+  background: linear-gradient(
+    135deg,
+    rgba($left-color, .9),
+    rgba($right-color, .9)
+  );
 }
-
+  
 .mrloader .inner-loader {
         position: absolute;
         left: 50%;
